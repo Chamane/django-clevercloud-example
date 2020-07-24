@@ -1,0 +1,11 @@
+{
+    "build": {
+        "cache_dependancies": true
+    },
+    "deploy": {
+        "module": "config.wsgi:application",
+        "managetasks": [
+            "collectstatic --noinput"
+        ]
+    }
+}
